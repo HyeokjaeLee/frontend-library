@@ -1,4 +1,4 @@
-//* Red
+/* stylelint-disable */
 $RED-50: #fef2f2;
 $RED-100: #fee2e2;
 $RED-200: #fecaca;
@@ -9,8 +9,6 @@ $RED-600: #dc2626;
 $RED-700: #b91c1c;
 $RED-800: #991b1b;
 $RED-900: #7f1d1d;
-
-//* Orange
 $ORANGE-50: #fff7ed;
 $ORANGE-100: #ffedd5;
 $ORANGE-200: #fed7aa;
@@ -21,8 +19,6 @@ $ORANGE-600: #ea580c;
 $ORANGE-700: #c2410c;
 $ORANGE-800: #9a3412;
 $ORANGE-900: #7c2d12;
-
-//* Amber
 $AMBER-50: #fffbeb;
 $AMBER-100: #fef3c7;
 $AMBER-200: #fde68a;
@@ -33,8 +29,6 @@ $AMBER-600: #d97706;
 $AMBER-700: #b45309;
 $AMBER-800: #92400e;
 $AMBER-900: #78350f;
-
-//* Yellow
 $YELLOW-50: #fefce8;
 $YELLOW-100: #fef9c3;
 $YELLOW-200: #fef08a;
@@ -45,8 +39,6 @@ $YELLOW-600: #ca8a04;
 $YELLOW-700: #a16207;
 $YELLOW-800: #854d0e;
 $YELLOW-900: #713f12;
-
-//* Lime
 $LIME-50: #f7fee7;
 $LIME-100: #ecfccb;
 $LIME-200: #d9f99d;
@@ -57,8 +49,6 @@ $LIME-600: #65a30d;
 $LIME-700: #4d7c0f;
 $LIME-800: #3f6212;
 $LIME-900: #365314;
-
-//* Green
 $GREEN-50: #f0fdf4;
 $GREEN-100: #dcfce7;
 $GREEN-200: #bbf7d0;
@@ -69,8 +59,6 @@ $GREEN-600: #16a34a;
 $GREEN-700: #15803d;
 $GREEN-800: #166534;
 $GREEN-900: #14532d;
-
-//* Emerald
 $EMERALD-50: #ecfdf5;
 $EMERALD-100: #d1fae5;
 $EMERALD-200: #a7f3d0;
@@ -81,8 +69,6 @@ $EMERALD-600: #059669;
 $EMERALD-700: #047857;
 $EMERALD-800: #065f46;
 $EMERALD-900: #064e3b;
-
-//* Teal
 $TEAL-50: #f0fdfa;
 $TEAL-100: #ccfbf1;
 $TEAL-200: #99f6e4;
@@ -93,8 +79,6 @@ $TEAL-600: #0d9488;
 $TEAL-700: #0f766e;
 $TEAL-800: #115e59;
 $TEAL-900: #134e4a;
-
-//* Cyan
 $CYAN-50: #ecfeff;
 $CYAN-100: #cffafe;
 $CYAN-200: #a5f3fc;
@@ -105,8 +89,6 @@ $CYAN-600: #0891b2;
 $CYAN-700: #0e7490;
 $CYAN-800: #155e75;
 $CYAN-900: #164e63;
-
-//* Light Blue
 $LIGHT-BLUE-50: #f0f9ff;
 $LIGHT-BLUE-100: #e0f2fe;
 $LIGHT-BLUE-200: #bae6fd;
@@ -117,8 +99,6 @@ $LIGHT-BLUE-600: #0284c7;
 $LIGHT-BLUE-700: #0369a1;
 $LIGHT-BLUE-800: #075985;
 $LIGHT-BLUE-900: #0c4a6e;
-
-//* Blue
 $BLUE-50: #eff6ff;
 $BLUE-100: #dbeafe;
 $BLUE-200: #bfdbfe;
@@ -129,8 +109,6 @@ $BLUE-600: #2563eb;
 $BLUE-700: #1d4ed8;
 $BLUE-800: #1e40af;
 $BLUE-900: #1e3a8a;
-
-//* Indigo
 $INDIGO-50: #eef2ff;
 $INDIGO-100: #e0e7ff;
 $INDIGO-200: #c7d2fe;
@@ -141,8 +119,6 @@ $INDIGO-600: #4f46e5;
 $INDIGO-700: #4338ca;
 $INDIGO-800: #3730a3;
 $INDIGO-900: #312e81;
-
-//* Violet
 $VIOLET-50: #f5f3ff;
 $VIOLET-100: #ede9fe;
 $VIOLET-200: #ddd6fe;
@@ -153,8 +129,6 @@ $VIOLET-600: #7c3aed;
 $VIOLET-700: #6d28d9;
 $VIOLET-800: #5b21b6;
 $VIOLET-900: #4c1d95;
-
-//* Purple
 $PURPLE-50: #faf5ff;
 $PURPLE-100: #f3e8ff;
 $PURPLE-200: #e9d5ff;
@@ -165,8 +139,6 @@ $PURPLE-600: #9333ea;
 $PURPLE-700: #7e22ce;
 $PURPLE-800: #6b21a8;
 $PURPLE-900: #581c87;
-
-//* Fuchsia
 $FUCHSIA-50: #fdf4ff;
 $FUCHSIA-100: #fae8ff;
 $FUCHSIA-200: #f5d0fe;
@@ -177,8 +149,6 @@ $FUCHSIA-600: #c026d3;
 $FUCHSIA-700: #a21caf;
 $FUCHSIA-800: #86198f;
 $FUCHSIA-900: #701a75;
-
-//* Pink
 $PINK-50: #fdf2f8;
 $PINK-100: #fce7f3;
 $PINK-200: #fbcfe8;
@@ -189,8 +159,6 @@ $PINK-600: #db2777;
 $PINK-700: #be185d;
 $PINK-800: #9d174d;
 $PINK-900: #831843;
-
-//* Rose
 $ROSE-50: #fff1f2;
 $ROSE-100: #ffe4e6;
 $ROSE-200: #fecdd3;
@@ -201,8 +169,6 @@ $ROSE-600: #e11d48;
 $ROSE-700: #be123c;
 $ROSE-800: #9f1239;
 $ROSE-900: #881337;
-
-//* Warm Gray
 $WARM-GRAY-50: #fafaf9;
 $WARM-GRAY-100: #f5f5f4;
 $WARM-GRAY-200: #e7e5e4;
@@ -213,8 +179,6 @@ $WARM-GRAY-600: #57534e;
 $WARM-GRAY-700: #44403c;
 $WARM-GRAY-800: #292524;
 $WARM-GRAY-900: #1c1917;
-
-//* True Gray
 $TRUE-GRAY-50: #fafafa;
 $TRUE-GRAY-100: whitesmoke;
 $TRUE-GRAY-200: #e5e5e5;
@@ -225,8 +189,6 @@ $TRUE-GRAY-600: #525252;
 $TRUE-GRAY-700: #404040;
 $TRUE-GRAY-800: #262626;
 $TRUE-GRAY-900: #171717;
-
-//* Gray
 $GRAY-50: #fafafa;
 $GRAY-100: #f4f4f5;
 $GRAY-200: #e4e4e7;
@@ -237,8 +199,6 @@ $GRAY-600: #52525b;
 $GRAY-700: #3f3f46;
 $GRAY-800: #27272a;
 $GRAY-900: #18181b;
-
-//* Cool Gray
 $COOL-GRAY-50: #f9fafb;
 $COOL-GRAY-100: #f3f4f6;
 $COOL-GRAY-200: #e5e7eb;
@@ -249,8 +209,6 @@ $COOL-GRAY-600: #4b5563;
 $COOL-GRAY-700: #374151;
 $COOL-GRAY-800: #1f2937;
 $COOL-GRAY-900: #111827;
-
-//* Blue Gray
 $BLUE-GRAY-50: #f8fafc;
 $BLUE-GRAY-100: #f1f5f9;
 $BLUE-GRAY-200: #e2e8f0;

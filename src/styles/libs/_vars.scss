@@ -1,4 +1,4 @@
-@use './palette' as palette;
+@use './colors' as colors;
 
 $FONT-SIZE-XS: 0.5em;
 $FONT-SIZE-SM: 0.75em;
@@ -16,7 +16,7 @@ $HOVERED_BOX_SHADOW: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 $INPUT_DEFAULT_WIDTH: 350px;
 
-$INPUT_PLACEHOLDER_COLOR: rgba(palette.$BLUE-GRAY-400, 0.8);
+$INPUT_PLACEHOLDER_COLOR: rgba(colors.$BLUE-GRAY-400, 0.8);
 
 $INPUT_SMALL_PADDING_X: 0.7rem;
 $INPUT_MEDIUM_PADDING_X: 0.95rem;

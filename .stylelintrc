@@ -1,3 +1,13 @@
 {
-  "extends": ["@hyeokjaelee/stylelint-config"]
+  "extends": ["@hyeokjaelee/stylelint-config"],
+  "ignoreFiles": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "node_modules/**/*",
+    "build/**/*",
+    "dist/**/*",
+    "public/**/*"
+  ]
 }
