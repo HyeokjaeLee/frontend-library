@@ -170,6 +170,11 @@ jobs:
           version: ${{ env.PNPM_VERSION }}
           run_install: true
 
+      - name: Reset git state
+        run: |
+          git reset --hard
+          git clean -fdx
+
       - name: Set canary version
         run: pnpm run version:canary
 

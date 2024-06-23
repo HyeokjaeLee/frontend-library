@@ -1,6 +1,7 @@
 {
   "extends": ["@hyeokjaelee/stylelint-config"],
   "ignoreFiles": [
+    ".storybook/**/*",
     "**/*.js",
     "**/*.jsx",
     "**/*.ts",

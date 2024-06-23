@@ -1,3 +1,9 @@
 {
-  "extends": ["@hyeokjaelee/eslint-config"]
+  "extends": ["@hyeokjaelee/eslint-config"],
+  "ignorePatterns": [
+    "node_modules/**/*",
+    "build/**/*",
+    "dist/**/*",
+    "public/**/*"
+  ]
 }
