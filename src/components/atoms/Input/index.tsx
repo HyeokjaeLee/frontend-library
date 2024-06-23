@@ -3,9 +3,8 @@ import { forwardRef } from 'react';
 import { useFormatInputValue } from '@hooks';
 import type { InputType } from '@hooks';
 import type { HTMLTagProps } from '@types';
-import { cleanClassName } from '@utils';
+import { cn } from '@utils';
 
-import styles from './index.module.scss';
 import { InputWrap } from './inputWrap';
 
 export type { InputWrapProps } from './inputWrap';
@@ -55,6 +54,8 @@ export const Input = Object.assign(
         placeholder,
       });
 
+      const isButton = type === 'button';
+
       return (
         <input
           {...restInputProps}
@@ -70,10 +71,14 @@ export const Input = Object.assign(
           type={type}
           placeholder={placeholder}
           value={formattedValue}
-          className={cleanClassName(
-            `${styles.input} ${type === 'button' && styles.button} ${
-              !value && styles.empty
-            } ${className}`,
+          className={cn(
+            'ptu-w-full ptu-border-none ptu-outline-none ptu-bg-ingerit ptu-text-ingerit ptu-font-ingerit ptu-text-start ptu-transition-colors placeholder:ptu-text-placeholder',
+            {
+              'ptu-overflow-hidden ptu-text-ellipsis ptu-cursor-pointer disabled:ptu-cursor-default':
+                isButton,
+              'ptu-text-placeholder': !value && isButton,
+            },
+            className,
           )}
           onInvalid={(e) => {
             e.preventDefault();

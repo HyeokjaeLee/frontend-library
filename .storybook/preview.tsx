@@ -1,5 +1,6 @@
-import '../src/styles/_global.scss';
-import '../src/styles/storybook.scss';
+import '@styles/_global.scss';
+import '@styles/storybook.scss';
+
 import { Preview } from '@storybook/react';
 import React from 'react';
 

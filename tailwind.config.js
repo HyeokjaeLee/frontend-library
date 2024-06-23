@@ -1,8 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  content: [],
+  mode: 'jit',
+  prefix: 'ptu-',
+  content: ['./src/components/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    fontSize: {
+      xs: '0.5rem',
+      sm: '0.75rem',
+      md: '1rem',
+      lg: '1.25rem',
+      xl: '1.5rem',
+    },
     colors: {
       RED: {
         50: '#fef2f2',
@@ -269,7 +278,50 @@ export default {
         900: '#0f172a',
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        ingerit: 'inherit',
+      },
+      fontSize: {
+        ingerit: 'inherit',
+      },
+      colors: {
+        ingerit: 'inherit',
+        transparent: 'transparent',
+        white: '#ffffff',
+        black: '#000000',
+        placeholder: 'rgba(#94a3b8,0.8)',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    ({ addUtilities }) => {
+      const utilities = {
+        '.transition-bg-shadow': {
+          'transition-property': 'background-color, box-shadow',
+          'transition-timing-function': 'cubic-bezier(0.4, 0, 0.2, 1)',
+          'transition-duration': '150ms',
+        },
+        '.transition-size-location': {
+          'transition-property': 'padding, margin, width, height',
+          'transition-timing-function': 'cubic-bezier(0.4, 0, 0.2, 1)',
+          'transition-duration': '150ms',
+        },
+        '.flex-col': {
+          display: 'flex',
+        },
+        '.flex-row': {
+          display: 'flex',
+        },
+        '.flex-row-reverse': {
+          display: 'flex',
+        },
+        '.flex-col-reverse': {
+          display: 'flex',
+        },
+      };
+
+      addUtilities(utilities, ['responsive', 'hover']);
+    },
+  ],
 };

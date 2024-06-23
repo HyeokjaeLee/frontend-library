@@ -4,7 +4,7 @@ import {
   useInputMessageDynamicHeight,
 } from '@hooks';
 import type { HTMLTagProps, Size } from '@types';
-import { cleanClassName } from '@utils';
+import { cleanClassName, cn } from '@utils';
 
 import styles from './InputWrap.module.scss';
 
@@ -39,29 +39,49 @@ export const InputWrap = ({
   return (
     <div
       {...restDivProps}
-      className={cleanClassName(`${styles['input-wrap']} ${className}`)}
+      className={cn('ptu-relative ptu-w-96 focus:ptu-z-10', className)}
     >
       <label
-        className={cleanClassName(
-          `${styles.label} ${isDarkMode && styles.dark} ${
-            validationMessage && styles.error
-          }`,
+        className={cn(
+          'ptu-flex-col ptu-box-border ptu-w-full ptu-rounded-md ptu-transition-bg-shadow',
+          styles.label,
+          {
+            [styles.dark]: isDarkMode,
+            [styles.error]: validationMessage,
+          },
         )}
       >
         {label ? (
           <p
-            className={cleanClassName(
-              `${styles['label-text']} ${required && styles.required}`,
+            className={cn(
+              'ptu-mt-2 ptu-text-COOL-GRAY-400 ptu-text-sm',
+              {
+                small: 'ptu-mx-3',
+                medium: 'ptu-mx-4',
+                large: 'ptu-mx-5',
+                'fit-content': 'ptu-mx-0',
+              }[size],
+              {
+                "after:ptu-content-['*'] after:ptu-text-RED-500 after:ptu-ml-1":
+                  required,
+              },
             )}
           >
             {label}
           </p>
         ) : null}
         <div
-          className={cleanClassName(
-            `${styles['input-wrap-content']} ${styles[`size-${size}`]} ${
-              reversed && styles.reversed
-            }`,
+          className={cn(
+            'ptu-relative ptu-flex ptu-gap-3 ptu-items-center ptu-justify-center ptu-box-border ptu-w-full',
+            {
+              'ptu-flex-row-reverse': reversed,
+            },
+            {
+              small: 'ptu-h-7 ptu-px-3',
+              medium: 'ptu-h-10 ptu-px-4',
+              large: 'ptu-h-12 ptu-px-5',
+              'fit-content': 'ptu-px-0 ptu-h-fit',
+            }[size],
           )}
         >
           {children}

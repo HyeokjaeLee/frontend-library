@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "dbaeumer.vscode-eslint",
+    "mrmlnc.vscode-scss",
+    "PKief.material-icon-theme",
+    "clinyong.vscode-css-modules",
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
