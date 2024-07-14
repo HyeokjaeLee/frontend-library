@@ -8,7 +8,6 @@ const DARK_MODE_CLASS = 'dark';
 
 export default {
   parameters: {
-    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -16,6 +15,7 @@ export default {
       },
     },
   },
+
   decorators: [
     (Story) => {
       if (window.location.href.includes(DARK_MODE_QUERY)) {
@@ -27,4 +27,6 @@ export default {
       return <Story />;
     },
   ],
+
+  tags: ['autodocs'],
 } satisfies Preview;
